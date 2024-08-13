@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Natasha Zhekyu](https://up.htmlacademy.ru/htmlcss-individual/2/user/2558617).
-* Наставник: `Неизвестно`.
+* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
 
 ---
 
