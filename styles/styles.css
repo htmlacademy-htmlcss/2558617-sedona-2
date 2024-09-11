@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color:black;
+  background-color: #ffffff;
+}
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.main-index {
+  background-image: url("../images/index-background.jpg");
+  background-color: #ffffff;
+  color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.reasons {
+  text-align: center;
+}
+.reasons-caption {
+  font-family: "PT Sans" sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.reasons-description {
+  font-family: "PT Sans" sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+.advantages {
+  text-align: center;
+}
+.blue-bg {
+  background-color: #82B3D3;
+  width: 400px;
+  height: 385px;
+}
+.blue-bg h3 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.blue-bg p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+.light-blue-bg {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 385px;
+}
+.light-blue-bg h3 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.light-blue-bg p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+.medium-blue-bg {
+  background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 385px;
+}
+.medium-blue-bg h3 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.medium-blue-bg p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+.features {
+  text-align: center;
+}
+.features-caption {
+  font-family: "PT Sans" sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.features-description {
+  font-family: "PT Sans" sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+.infrastructure-item {
+  text-align: center;
+}
+.medium-blue-bg h4 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.light-blue-bg h4 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.search-title {
+  font-family: "PT Sans" sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+}
+.search-description {
+  font-family: "PT Sans" sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+.subscribe-with-img {
+  background-image: url("../images/subscribe-photo.jpg");
+  width: 1200px;
+  height: 414px;
+}
+.subscribe-with-img h2 {
+  font-family: "PT Sans" sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+.subscribe-with-img p {
+  font-family: "PT Sans" sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+}
+.page-footer {
+  text-align: center;
+}
+.footer-phone {
+  font-family: "PT Sans" sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+.conditions {
+  background-image: url(../images/catalog-main.jpg);
+  width: 1200px;
+  height: 412px;
+}
+.inner-title {
+  font-size: 60px;
+  line-height: 68px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+}
+.catalog-filters-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.catalog-filters-item {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.catalog-products-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color:#000000;
+}
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  color:#000000;
+}
+.product-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.type-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: normal;
+}
+.subscribe-no-img h2 {
+  font-family: "PT Sans" sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+}
+.subscribe-no-img p {
+  font-family: "PT Sans" sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}

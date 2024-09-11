@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -149,8 +150,10 @@
               <img class="product-card-image" src="images/hotels-photos/hotel-1.jpg" width="300" height="212" alt="Звездное небо и горы">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
-            <p class="prodict-card-type">Гостиница</p>
-            <p class="product-card-price">От 4000 ₽</p>
+            <div class="type-price">
+             <p class="prodict-card-type">Гостиница</p>
+             <p class="product-card-price">От 4000 ₽</p>
+            </div>
             <a class="product-card-button" href="#">Подробнее</a>
             <a class="add-favorite-button" href="#">В избранное</a>
             <p class="product-card-stars"><span class="visually-hidden">4 звезды</span></p>
@@ -161,8 +164,10 @@
               <img class="product-card-image" src="images/hotels-photos/hotel-2.jpg" width="300" height="212" alt="Горы и радуга">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="prodict-card-type">Гостиница</p>
-            <p class="product-card-price">От 5000 ₽</p>
+            <div class="type-price">
+             <p class="prodict-card-type">Гостиница</p>
+             <p class="product-card-price">От 5000 ₽</p>
+            </div>
             <a class="product-card-button" href="#">Подробнее</a>
             <a class="favorite-button" href="#">В избранном</a>
             <p class="product-card-stars"><span class="visually-hidden">4 звезды</span></p>
@@ -173,8 +178,10 @@
               <img class="product-card-image" src="images/hotels-photos/hotel-3.jpg" width="300" height="212" alt="Горы на закате">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
-            <p class="prodict-card-type">Гостиница</p>
-            <p class="product-card-price">От 2500 ₽</p>
+            <div class="type-price">
+             <p class="prodict-card-type">Гостиница</p>
+             <p class="product-card-price">От 2500 ₽</p>
+            </div>
             <a class="product-card-button" href="#">Подробнее</a>
             <a class="add-favorite-button" href="#">В избранное</a>
             <p class="product-card-stars"><span class="visually-hidden">3 звезды</span></p>
@@ -185,8 +192,10 @@
               <img class="product-card-image" src="images/hotels-photos/hotel-4.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
-            <p class="prodict-card-type">Гостиница</p>
-            <p class="product-card-price">От 1500 ₽</p>
+            <div class="type-price">
+             <p class="prodict-card-type">Гостиница</p>
+             <p class="product-card-price">От 1500 ₽</p>
+            </div>
             <a class="product-card-button" href="#">Подробнее</a>
             <a class="add-favorite-button" href="#">В избранное</a>
             <p class="product-card-stars"><span class="visually-hidden">2 звезды</span></p>
@@ -214,7 +223,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe">
+      <section class="subscribe-no-img">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
