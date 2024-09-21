@@ -354,6 +354,7 @@ html {
 }
 .product-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .inner-container {
   display: flex;
