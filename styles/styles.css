@@ -341,13 +341,23 @@ html {
 }
 .catalog-filters {
   display: flex;
-  width: 1060px;
 }
 .catalog-results {
   display: flex;
-  width: 1060px;
 }
 .product-list {
   margin: 0;
   padding: 0;
+}
+.pagination {
+  display: flex;
+}
+.product-list {
+  display: flex;
+}
+.inner-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  flex-direction: column;
 }
