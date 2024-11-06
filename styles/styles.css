@@ -1372,3 +1372,210 @@ html {
 .interval-input-before[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  display: flex;
+  z-index: 2;
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+.modal-search {
+  width: 717px;
+  border-radius: 30px;
+}
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-image: url(../images/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 52px 52px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.data-start-label {
+  font-family: 'PT Sans';
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.data-end-label {
+  font-family: 'PT Sans';
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 24px;
+}
+.amount-peope-adult {
+  font-family: 'PT Sans';
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 46px;
+}
+.amount-peope-children {
+  font-family: 'PT Sans';
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 82px;
+}
+.amount {
+  display: flex;
+}
+.start-input {
+  display: block;
+  width: 440px;
+  min-height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 20px;
+  font-family: 'PT Sans';
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  position: relative;
+}
+.end-input {
+  display: block;
+  width: 440px;
+  min-height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 20px;
+  font-family: 'PT Sans';
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.data-start {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.data-end {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.search-modal-button {
+  width: 577px;
+  min-height: 60px;
+  background-color: #82B3D3;
+  color: #ffffff;
+  font-family: 'PT Sans';
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 48px;
+  padding: 0;
+  text-align: center;
+}
+.adult-input {
+  width: 110px;
+  min-height: 48px;
+  background-color: #F2F2F2;
+  color: #000000;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+.children-input {
+  width: 110px;
+  min-height: 48px;
+  background-color: #F2F2F2;
+  color: #000000;
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+.adult-input::-webkit-outer-spin-button,
+.adult-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.adult-input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.adult-input::-webkit-outer-spin-button,
+.adult-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.adult-input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.children-input::-webkit-outer-spin-button,
+.children-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.children-input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.children-input::-webkit-outer-spin-button,
+.children-input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.children-input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.amount-people {
+  margin-right: 88px;
+}

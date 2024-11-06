@@ -178,6 +178,41 @@
           </svg>
        </a>
      </footer>
+     <div class="modal-container">
+      <div class="modal modal-search">
+        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="data-start">
+            <label class="data-start-label" for="start">Дата Заезда:</label>
+            <input class="start-input" type="text" placeholder="27 апреля 2020" id="start" name="trip-start" value="27 апреля 2020" min="2023-01-01" max="2023-12-31" required>
+            <button class="calendar-start" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+          </div>
+          <div class="data-end">
+            <label class="data-end-label" for="end">Дата Выезда:</label>
+            <input class="end-input" type="text" placeholder="1 сентября 2023" id="start" name="trip-start" value="1 сентября 2023" min="2023-01-01" max="2023-12-31" required>
+            <button class="calendar-end" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+          </div>
+          <div class="amount">
+           <div class="amount-people">
+             <label class="amount-people-adult" for="adult">Взрослые:</label>
+             <input class="adult-input" type="number" value="2">
+           </div>
+           <div class="amount-people">
+             <label class="amount-people-children" for="children">Дети:</label>
+             <input class="children-input" type="number" value="2">
+           </div>
+          </div>
+          <button class="search-modal-button" type="submit">Найти</button>
+        </form>
+      </div>
+     </div>
    </div>
   </body>
 </html>
