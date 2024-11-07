@@ -1424,7 +1424,6 @@ html {
   line-height: 24px;
   color: #000000;
   font-weight: bold;
-  margin-right: 24px;
 }
 .data-end-label {
   font-family: 'PT Sans';
@@ -1432,9 +1431,8 @@ html {
   line-height: 24px;
   color: #000000;
   font-weight: bold;
-  margin-right: 24px;
 }
-.amount-peope-adult {
+.amount-people-adult {
   font-family: 'PT Sans';
   font-size: 20px;
   line-height: 24px;
@@ -1442,7 +1440,7 @@ html {
   font-weight: bold;
   margin-right: 46px;
 }
-.amount-peope-children {
+.amount-people-children {
   font-family: 'PT Sans';
   font-size: 20px;
   line-height: 24px;
@@ -1483,14 +1481,20 @@ html {
   font-weight: bold;
 }
 .data-start {
-  display: flex;
+  display: grid;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 23px;
+  gap: 0 18px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 440px;
 }
 .data-end {
-  display: flex;
+  display: grid;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 23px;
+  gap: 0 18px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 440px;
 }
 .search-modal-button {
   width: 577px;
@@ -1521,6 +1525,7 @@ html {
   border: none;
   border-radius: 4px;
   text-align: center;
+  display: block;
 }
 .children-input {
   width: 110px;
@@ -1578,4 +1583,118 @@ html {
 }
 .amount-people {
   margin-right: 88px;
+}
+.data-field-wrapper {
+  position: relative;
+}
+.calendar-button {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+}
+.calendar-button svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+.hint-button {
+border: none;
+background-image: url('../images/info.svg');
+width: 20px;
+height: 20px;
+background-position: center;
+border-radius: 100%;
+}
+
+.hint-button:hover + .hint-text {
+  display: block;
+}
+.data-field-message-start {
+  grid-column: 2/3;
+  padding-left: 20px;
+  color: #FF5757;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  margin-top: 4px;
+}
+.data-field-message-end {
+  grid-column: 2/3;
+  padding-left: 20px;
+  color: #333333;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  margin-top: 4px;
+}
+.amount-field-wrapper {
+  position: relative;
+}
+.plus {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 70px;
+  top: 0;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minus {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-button:hover svg {
+  fill: #000000;
+}
+.calendar-button:focus svg {
+  fill: #000000;
+  border: #82B3D3 solid 3px;
+  border-radius: 4px;
+}
+.plus:default svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+.plus:hover svg {
+  fill: #000000;
+}
+.plus:focus svg {
+  fill: #000000;
+  border: #82B3D3 solid 3px;
+  border-radius: 4px;
+}
+.minus:default svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+.minus:hover svg {
+  fill: #000000;
+}
+.minus:focus svg {
+  fill: #000000;
+  border: #82B3D3 solid 3px;
+  border-radius: 4px;
+}
+.search-modal-button:hover {
+  background-color: #68A2CA;
+}
+.search-modal-button:active {
+  background-color: #68A2CA;
+  color: rgba(242, 242, 242, 0.3);
 }
