@@ -528,7 +528,6 @@ html {
   display: flex;
 }
 .navigation-user {
-  max-width: 268px;
   list-style-type: none;
   display: flex;
   margin-left: auto;
@@ -744,6 +743,7 @@ html {
   background-color: #756157;
   color: #ffffff;
   text-decoration: none;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -925,7 +925,7 @@ html {
   justify-content: space-between;
 }
 .product-card-stars {
-  background-image: url('../images/star\ 1.svg');
+  background-image: url('../images/star.svg');
   background-repeat: space no-repeat;
   background-position: left center;
   background-size: 18px 17px;
@@ -1109,13 +1109,10 @@ html {
 .header-button:hover {
   background-color: #615048;
 }
-.header-button:focus {
-  background-color: #615048;
-}
 .header-button:disabled {
   background-color: #E5E5E5;
 }
-.header-button:default {
+.header-button {
   background-color: #756157;
 }
 .header-button:active {
@@ -1125,13 +1122,10 @@ html {
 .search-button:hover {
   background-color: #615048;
 }
-.search-button:focus {
-  background-color: #615048;
-}
 .search-button:disabled {
   background-color: #E5E5E5;
 }
-.search-button:default {
+.search-button {
   background-color: #756157;
 }
 .search-button:active {
@@ -1141,23 +1135,17 @@ html {
 .footer-phone:hover {
   color: #756157;
 }
-.footer-phone:focus {
-  color: #756157;
-}
 .footer-phone:active {
   color: #756157;
   opacity: 0.3;
 }
-.footer-phone:default {
+.footer-phone {
   color: #000000;
 }
-.catalog-filters-submit:default {
+.catalog-filters-submit {
   background-color: #82B3D3;
 }
 .catalog-filters-submit:hover {
-  background-color: #68A2CA;
-}
-.catalog-filters-submit:focus {
   background-color: #68A2CA;
 }
 .catalog-filters-submit:active {
@@ -1174,16 +1162,22 @@ html {
 .catalog-filters-reset:focus {
   outline: solid 3px #82B3D3;
 }
+.catalog-filters-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.catalog-filters-reset:disabled {
+  color: #ffffff;
+  opacity: 0.1;
+}
 .select-control:hover {
   border: 2px solid #68A2CA;
 }
-.select-control:default {
+.select-control {
   border: 2px solid #E5E5E5;
 }
 .select-control:disabled {
-  border: 2px solid #000000;
-  color: #000000;
-  opacity: 0.3;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 .view-buttons-tile:hover {
   border: 2px solid #000000;
@@ -1735,7 +1729,7 @@ display: block;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url('../images/triangle\ 1.svg');
+  background-image: url('../images/triangle.svg');
 }
 .modal-container-hidden {
   display: none;
