@@ -54,15 +54,14 @@
        <section class="advantages">
          <h2 class="visually-hidden">Преимущества</h2>
          <ul class="advantages-list">
-           <li class="advantages-item-with-bg">
+           <li class="advantages-item-with-bg-normal">
             <div class="blue-bg">
               <h3 class="advantages-title">Настоящий городок</h3>
-              <p class="advantages-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantages-description-white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img class="advantages-picture" src="images/reasons-photos/reasons-photo-1.jpg" width="800" height="385" alt="Дом на фоне гор">
            </li>
-           <div class="advantages-item-no-bg">
-            <li class="advantages-item">
+            <li class="advantages-item-">
               <div class="light-blue-bg">
                <h3 class="advantages-title">Небольшая площадь</h3>
                <p class="advantages-description">Все достопримечательности находятся очень близко</p>
@@ -84,7 +83,7 @@
            <li class="advantages-item-with-bg">
              <div class="blue-bg">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <p class="advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
              </div>
              <img class="advantages-picture" src="images/reasons-photos/reasons-photo-2.jpg" width="800" height="385" alt="Горы Седоны">
            </li>
@@ -161,7 +160,7 @@
          </li>
        </ul>
        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-       <a class="footer-navigation-logo" href="https://htmlacademy.ru/">
+       <a class="footer-navigation-logo" aria-label="logo-site" href="https://htmlacademy.ru/">
         <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
           <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"/>
@@ -191,7 +190,7 @@
           <div class="data-start">
             <label class="data-start-label" for="start">Дата Заезда:</label>
             <div class="data-field-wrapper">
-             <input class="start-input" type="text" placeholder="27 апреля 2020" id="start" name="trip-start" value="27 апреля 2020" min="2023-01-01" max="2023-12-31" required>
+             <input class="start-input" type="text" placeholder="27 апреля 2020" id="start" name="trip-start" value="27 апреля 2020" required>
              <button class="calendar-button" type="button">
               <span class="visually-hidden">Календарь</span>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +215,7 @@
           <div class="data-end">
             <label class="data-end-label" for="end">Дата Выезда:</label>
             <div class="data-field-wrapper">
-             <input class="end-input" type="text" placeholder="1 сентября 2023" id="start" name="trip-end" value="1 сентября 2023" min="2023-01-01" max="2023-12-31" required>
+             <input class="end-input" type="text" placeholder="1 сентября 2023" id="end" name="trip-end" value="1 сентября 2023" required>
              <button class="calendar-button" type="button">
               <span class="visually-hidden">Календарь</span>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +241,7 @@
            <div class="amount-people">
              <label class="amount-people-adult" for="adult">Взрослые:</label>
               <div class="amount-field-wrapper">
-               <input class="adult-input" type="number" value="2">
+               <input class="adult-input" type="number" id="adult" value="2" required>
                <button class="plus" type="button">
                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
@@ -258,18 +257,22 @@
            <div class="amount-people">
              <label class="amount-people-children" for="children">Дети:</label>
              <div class="hint">
-               <button class="hint-button" type="button">
+               <button class="hint-button" aria-label="information" type="button">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                  </svg>
                </button>
                <div class="hint-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
              </div>
               <div class="amount-field-wrapper">
-              <input class="children-input" type="number" value="2">
-              <button class="plus" type="button">
+              <input class="children-input" type="number" value="2" id="children" required>
+              <button class="plus" aria-label="add-number" type="button">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
                 </svg>
               </button>
-              <button class="minus" type="button">
+              <button class="minus" aria-label="substract-number" type="button">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 9V11H17V9H3Z"/>
                   </svg>
