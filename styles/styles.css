@@ -2069,3 +2069,19 @@ html {
 .product-card-image:active {
   outline: solid 5px #615048;
 }
+
+.navigation-link:hover {
+  color: rgba(117, 97, 87, 0.3)
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-user-link:hover {
+  background-color: rgba(117, 97, 87, 0.3)
+}
+
+.navigation-user-link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
